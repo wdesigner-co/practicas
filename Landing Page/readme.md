@@ -20,11 +20,11 @@ Nota: es solo referencial, deben adaptarlo a sus preferencias y usar estilos par
 
 ## Sígueme en las Redes Sociales
 
-[![GitHub](img/Github_blue.png)](https://github.com/wdesigner-co)
+[![GitHub](https://github.com/wdesigner-co/wdesigner-co/blob/main/img/Github_blue.png)](https://github.com/wdesigner-co)
 [![Twitter](img/X.png)](https://x.com/WDesigner_co)
-[![LinkedIn](img/linkedin.png)](https://www.linkedin.com/in/alejandro-villanueva-d)
-[![Facebook](img/facebook.png)](https://www.facebook.com/wdesigner.co)
-[![Instagram](img/instagram.png)](https://instagram.com/wdesigner.co)
+[![LinkedIn](https://github.com/wdesigner-co/wdesigner-co/blob/main/img/linkedin.png)](https://www.linkedin.com/in/alejandro-villanueva-d)
+[![Facebook](https://github.com/wdesigner-co/wdesigner-co/blob/main/img/facebook.png)](https://www.facebook.com/wdesigner.co)
+[![Instagram](https://github.com/wdesigner-co/wdesigner-co/blob/main/img/instagram.png)](https://instagram.com/wdesigner.co)
 
 
 
