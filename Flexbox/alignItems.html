@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta lang="es">
+  <meta charset="UTF-8">
+	<title>Generador de código CSS Flexbox</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Alejandro Villanueva | WDesigner.co" />
+  <meta name="description" content="Herramientas de CSS, generador de código para  flexbox aligning, usando justify-content, align items, flex-direction">
+  <meta name="keywords" content="css, flexbox, center, div, justify-content, align-items, flex-direction">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  
+<!--Iconos fotawesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+   
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" crossorigin="anonymous">
 
+</head>
+<body>
+  <header>
+    <picture class="logo">
+      <source media="(min-width: 769px)" srcset="img/logowd.png">
+      <source media="(min-width: 768px)" srcset="img/logowd.png" width="48">
+      <img src="img/logowd.png" alt="logo">
+      <h3>WDesigner</h3>
+    </picture>
+    <nav class="navbar">
+      <ul>
+        <a href="#"><li>Inicio</li></a>
+        <a href="https://wdesignerco.blogspot.com/?m=1"><li>Blog</li></a>
+        <a href="#"><li>Contacto</li></a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <h2>Preview</h2>
+	<div class="preview-container">
+	  
+		<div class="box" id="box-1">1</div>
+		<div class="box" id="box-2">2</div>
+		<div class="box" id="box-3">3</div>
+	</div>
+	<div class="form-container">
+		<h1>Alineación en Flexbox</h1>
+		<form>
+			<div class="propiedad">
+			  <label for="flex-direction">Flex-direction:</label>
+			  
+			  <select id="flex-direction">
+			    <option value="row">Row</option>
+			    <option value="row-reverse">Row-reverse</option>
+			    <option value="column">Column</option>
+			    <option value="column-reverse">Column-reverse</option>
+			  </select>
+			</div>
+			
+			<div class="propiedad">
+			  <label for="justify-content">Justify-content:</label>
+			  
+			<select id="justify-content">
+				<option value="flex-start">Flex-start</option>
+				<option value="flex-end">Flex-end</option>
+				<option value="center">Center</option>
+				<option value="space-between">Space-between</option>
+				<option value="space-around">Space-around</option>
+				<option value="space-evenly">Space-evenly</option>
+			</select></div>
+			
+			<div class="propiedad">
+			  <label for="align-items">Align-items:</label>
+			  
+			<select id="align-items">
+				<option value="flex-start">Flex-start</option>
+				<option value="flex-end">Flex-end</option>
+				<option value="center">Center</option>
+				<option value="baseline">Baseline</option>
+				<option value="stretch">Stretch</option>
+			</select></div>
+			<button type="submit">Alinear  </button>
+		</form>
+	</div>
+	
+	<div class="code-container">
+		<h2>Código CSS</h2>
+		<textarea id="css-code" readonly></textarea>
+	</div>
+  </main>
+	
+	<footer>
+    <h3> Alex Col | WDesigner </h3>
+    <div class="media-buttons">
+      
+      <a href="https://www.facebook.com/wdesigner.co"><i class="fa-brands fa-facebook"></i></a>
+      
+      <a href="https://x.com/WDesigner_co"><i class="fa-brands fa-square-x-twitter"></i></a>
+        
+      <a href="https://instagram.com/wdesigner.co"><i class="fa-brands fa-square-instagram"></i></a>
+        
+      <!--a href="#"><i class="fa-brands fa-square-threads"></i></a-->
+        
+      <a href="https://www.linkedin.com/in/alejandro-villanueva-d"><i class="fa-brands fa-linkedin"></i></a>
+        
+      <a href="https://github.com/wdesigner-co"><i class="fa-brands fa-github"></i></a>
+      
+      </div>
+    </div>
+    
+  </footer>
+	
+	<script src="js/script.js"></script>
+</body>
+  </html>
+                                             
