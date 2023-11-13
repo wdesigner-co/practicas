@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Topbar o header para productos tipo amazom */
+  
+  /* Estilos para el topbar */
+  
+  .topbar {
+    width: 100%;
+    height: 120px;
+    margin: 0px;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #232f3e;	
+  }
+  
+  /* Logo topbar */
+  
+  .logo-container {
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    order: 1;
+    color: white;
+  }
+  
+  .logo-container img {
+    height: 35px;
+    width: auto;
+  }
+  
+  .logo-container h3 {
+    margin: 0;
+    padding-left: 15px;
+    font-size: 1.4rem;
+  }
+  
+  /* Iconos topbar*/
+  
+  .icons-container {
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    order: 2;
+  }
+  
+  .icons-container ul {
+    list-style: none;
+    
+  }
+  
+  .icons-container li i{
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .icons-container li a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+/* Barra de búsqueda */
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    order: 3;
+  }
+  
+  .search-container input {
+    margin: 0;
+    padding: 11px;
+    border: none;
+    border-radius: 10px;
+    flex: 1;
+  }
+  
+  .search-container button {
+    margin: 0;
+    padding: 12px;
+    border: none;
+    background-color: #febd69;
+    border-radius: 10px;
+  }
+  
+  /* Media queries para diferentes tamaños de pantalla */
+  
+  /* Extra small (menor o igual a 576px) */
+  
+  @media screen and (max-width: 576px) {
+    
+    /* Estilos para pantallas extra pequeñas */
+    
+    .icons-container li p {
+      color: white;
+      display: none;
+    }
+    
+  }
+  
+  
+  /* Small (mayor que 577px y menor o igual que 767px) */
+  
+  @media screen and (min-width: 577px) and (max-width: 767px) {
+
+   /* Estilos para pantallas pequeñas */
+   
+   .icons-container li p {
+     color: white;
+     display: inline-block;
+     padding-left: 5px;
+   }
+    
+  }
+
+/* Medium (mayor que 768px y menor o igual que 992px) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+  .topbar {
+    flex-direction: row;
+    align-items: center;
+    height: 65px;
+    
+  }
+  
+  .logo-container {
+   order: 1;
+  }
+  
+  .icons-container {
+    order: 3; 
+  }
+  
+   .icons-container li p {
+    color: white;
+    display: inline-block;
+    padding-left: 5px;
+  }
+  
+  .search-container {
+    order: 2;
+    flex: 1;
+    margin: 0 30px;
+  }
+  
+}
+
+/* Large (mayor que 993px y menor o igual que 1200px) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+   /* Estilos para pantallas grandes */
+   
+  .topbar {
+    flex-direction: row;
+    align-items: center;
+    height: 65px;
+    
+  }
+  
+  .logo-container {
+   order: 1;
+  }
+  
+  .icons-container {
+    order: 3; 
+  }
+  
+   .icons-container li p {
+    color: white;
+    display: inline-block;
+    padding-left: 5px;
+  }
+  
+  .search-container {
+    order: 2;
+    flex: 1;
+    margin: 0 30px;
+  }
+   
+   
+}
+
+/* Extra large (mayor que 1200px) */
+@media screen and (min-width: 1200px) {
+
+   /* Estilos para pantallas extra grandes */
+   
+   .topbar {
+    flex-direction: row;
+    align-items: center;
+    height: 65px;
+    
+  }
+  
+  .logo-container {
+   order: 1;
+  }
+  
+  .icons-container {
+    order: 3; 
+  }
+  
+   .icons-container li p {
+    color: white;
+    display: inline-block;
+    padding-left: 5px;
+  }
+  
+  .search-container {
+    order: 2;
+    flex: 1;
+    margin: 0 30px;
+  }
+   
+}
+
+
+
+
+ 
