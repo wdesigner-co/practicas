@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo Articulo Cientifico </title>
+  
+  <meta name="author" content="Web Design | Alejandro Villanueva">
+  
+  <!-- favicon -->
+  <link rel="icon" type="logoWD48x48.png" href="/favicon.png">
+  
+  <!-- SEO -->
+  <meta name="description" content="WDesigner | Alejandro Villanueva diseña este modelo de articulo científico para revista web usando html y css">
+  <meta name="keywords" content="modelo web, articulo cientifico, normas apa, revista web, modelo,html, css">
+  
+  <style>
+  /* Estilos CSS básicos */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 2cm;
+    text-align: justify;
+  }
+  
+  main {
+    margin-bottom: 50px;
+  }
+  
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 14px;
+    margin-top: 1cm;
+  }
+  
+  p {
+    margin: 0.5cm 0;
+  }
+  
+  ul {
+   list-style-type: none;
+   margin-left: 0;
+  }
+  
+  li {
+    margin: 0.25cm 0;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  figure {
+    margin: 0 auto;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  caption {
+    margin-bottom: 5px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 0.2cm;
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    margin: 0.5cm auto;
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  figure figcaption {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  
+  a:visited {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    color: dimgrey;
+  }
+
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <!-- Título del artículo -->
+      <h1>Título del artículo</h1>
+      <!-- Datos del autor o autores -->
+      <p style="text-align: center;">
+        Nombre del autor o autores
+        <br>
+        Afiliación del autor o autores
+        <br>
+        Correo electrónico del autor o autores
+      </p>
+      <!-- Número de revista, tomo, fecha y enlaces internos -->
+      <p id="top" style="text-align: center;">
+        Revista Nº XX, Tomo XX, Año <time datetime="XXXX">XXXX</time>
+        <br>
+        <a href="#abstract">Abstract</a> |
+        <a href="#resumen">Resumen</a>  |
+        <a href="#introduccion">Introducción</a>  |
+        <a href="#metodologia">Metodología</a> |
+        <a href="#resultados">Resultados</a> |
+        <a href="#discusion">Discusión</a> |
+        <a href="#conclusiones">Conclusiones</a>  |
+        <a href="#referencias">Referencias</a>
+      </p>
+      
+      <!-- Abstract -->
+      <section id="abstract">
+        <h2>Abstract</h2>
+        <p>Aquí debes escribir un resumen en inglés de tu artículo, que incluya el problema investigado, el objetivo, la metodología, los resultados y las conclusiones principales. Debe ser conciso y claro, con un máximo de 250 palabras. También debes incluir algunas palabras clave en inglés que identifiquen el tema de tu artículo.
+        </p>
+        <p><b>Keywords:</b> keyword 1, keyword 2, keyword 3, ...
+        </p>
+      </section>
+      
+      <!-- Resumen -->
+      <section id="resume">
+        <h2>Resumen</h2>
+        <p>Aquí debes escribir un resumen en español de tu artículo, que incluya el problema investigado, el objetivo, la metodología, los resultados y las conclusiones principales. Debe ser conciso y claro, con un máximo de 250 palabras. También debes incluir algunas palabras clave en español que identifiquen el tema de tu artículo.
+        </p>
+        <p><b>Palabras clave:</b> palabra clave 1, palabra clave 2, palabra clave 3, ...
+        </p>
+        <br>
+        <a href="#top"> &#8896; volver</a>
+      </section>
+      
+      <!-- Introducción -->
+      <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>Aquí debes presentar el tema de tu investigación, el contexto, la justificación, los antecedentes, el estado del arte y el planteamiento del problema. Debes explicar por qué es importante y relevante tu investigación, cuáles son los objetivos que persigues, cuáles son las preguntas o hipótesis que guían tu trabajo y cuáles son los alcances y limitaciones de tu estudio. Debes usar un lenguaje formal, evitando las expresiones coloquiales, y citar las fuentes utilizadas, respetando la propiedad intelectual. Puedes usar el formato APA, MLA, IEEE u otro, según la revista donde quieras publicar. Por ejemplo, si usas el formato APA, las citas directas deben ir entre comillas y con el apellido del autor, el año y la página, como esta: "La ciencia es el conocimiento racional, sistemático, exacto, verificable y por consiguiente falible" (Bunge, 1980, p. 15). Las citas indirectas deben ir con el apellido del autor y el año, como esta: Según Bunge (1980), la ciencia se caracteriza por ser racional, sistemática, exacta y verificable. Al final del artículo, debes incluir la lista de referencias con el formato correspondiente.
+        </p>
+        <br>
+        <a href="#top"> &#8896; volver</a>
+      </section>
+      
+      <!-- Metodología -->
+      <section id="metodologia">
+        <h2>Metodología</h2>
+        <p>Aquí debes describir el tipo de investigación que realizaste, el diseño, la población, la muestra, las técnicas e instrumentos de recolección de datos, el procedimiento y el análisis de datos. Debes explicar con detalle y claridad cómo llevaste a cabo tu investigación, de manera que otros investigadores puedan replicarla o contrastarla. Debes usar un lenguaje preciso y técnico, evitando las ambigüedades y las opiniones personales. Debes citar las fuentes que respalden tu metodología, así como los instrumentos que utilizaste, si fueron elaborados por otros autores. También debes mencionar los aspectos éticos que consideraste en tu investigación, como el consentimiento informado, la confidencialidad, el respeto, etc.
+        </p>
+        <br>
+        <a href="#top"> &#8896; volver</a>
+      </section>
+      
+      <!-- Resultados -->
+      <section id="resultados">
+        <h2>Resultados</h2>
+        <p>Aquí debes presentar los datos obtenidos en tu investigación, sin interpretarlos ni discutirlos. Debes usar tablas, gráficos, figuras u otros recursos visuales que faciliten la comprensión de los resultados. Debes numerar y titular cada recurso visual, y referirte a ellos en el texto. Por ejemplo, puedes decir: "En la tabla 1 se muestra la distribución de frecuencias de las variables X e Y". También debes usar un lenguaje objetivo y descriptivo, evitando las valoraciones subjetivas. Debes resaltar los hallazgos más relevantes o significativos de tu investigación, y explicar cómo los obtuviste y qué significan. Por ejemplo, puedes decir: "Se aplicó una prueba t de Student para comparar las medias de los grupos A y B, y se encontró una diferencia estadísticamente significativa (t = 2.34, p < 0.05), lo que indica que el grupo A tiene un mayor rendimiento que el grupo B".
+        </p>
+      </section>
+      
+      <!-- Ejemplo de tabla -->
+      <figure>
+        <table>
+          <caption>Tabla 1. Distribución de frecuencias de las variables X e Y
+          </caption>
+          <tr>
+            <th>Variable</th>
+            <th>Frecuencia absoluta</th>
+            <th>Frecuencia relativa</th>
+          </tr>
+          <tr>
+            <td>X</td>
+            <td>25</td>
+            <td>0.5</td>
+          </tr>
+          <tr>
+            <td>Y</td>
+            <td>25</td>
+            <td>0.5</td>
+          </tr>
+        </table>
+      </figure>
+      
+      <!-- Ejemplo de imagen -->
+      <figure>
+        <img src="https://www.webyempresas.com/wp-content/uploads/2019/11/frecuencia-absoluta.jpg" alt="Gráfico 1. Relación entre las variables X e Y">
+        <figcaption><b>Gráfico 1.</b> Relación entre las variables X e Y. <br>Fuente: https://www.webyempresas.com/wp-content/uploads/2019/11/frecuencia-absoluta.jpg
+        </figcaption>
+      </figure>
+      <br>
+      <a href="#top"> &#8896; volver</a>
+      
+      <!-- Discusión -->
+      <section id="discusion">
+        <h2>Discusión</h2>
+        <p>Aquí debes interpretar y analizar los resultados de tu investigación, comparándolos con los de otros estudios similares o con las teorías existentes. Debes explicar las posibles causas, consecuencias e implicaciones de tus hallazgos, así como las limitaciones y las sugerencias para futuras investigaciones. Debes usar un lenguaje crítico y argumentativo, evitando las generalizaciones y las afirmaciones sin sustento. Debes citar las fuentes que apoyen o contradigan tus resultados, y mostrar cómo tu investigación aporta al conocimiento científico o a la solución de un problema práctico.
+        </p>
+        <br>
+        <a href="#top"> &#8896; volver</a>
+      </section>
+      
+      <!-- Conclusiones -->
+      <section id="conclusiones">
+        <h2>Conclusiones</h2>
+        <p>Aquí debes sintetizar los aspectos más importantes de tu investigación, respondiendo a los objetivos y a las preguntas o hipótesis planteadas en la introducción. Debes resaltar los aportes, las novedades y las recomendaciones de tu trabajo, así como las posibles aplicaciones o repercusiones que pueda tener. Debes usar un lenguaje claro y conciso, evitando repetir lo que ya dijiste en otras secciones. Debes enfatizar el valor y la relevancia de tu investigación, y motivar al lector a profundizar en el tema o a realizar nuevas investigaciones.
+        </p>
+        <br>
+        <a href="#top"> &#8896; volver</a>
+      </section>
+      
+      <!-- Referencias -->
+      <section id="referencias">
+        <h2>Referencias</h2>
+        <ul>
+          <li>Aquí debes incluir la lista de las fuentes que citaste en tu artículo, ordenadas alfabéticamente por el apellido del primer autor. Debes usar el formato de cita que corresponda a la revista donde quieras publicar, como APA, MLA, IEEE u otro. Por ejemplo, si usas el formato APA, las referencias deben tener esta forma:
+          </li>
+          <li>Bunge, M. (1980). <cite>La ciencia, su método y su filosofía</cite>. Siglo XXI.
+          </li>
+          <li>García, J., Pérez, A. y López, M. (2020). Efectos de la música clásica en el aprendizaje de los estudiantes universitarios. <cite>Revista de Educación Superior</cite>, 49(3), 45-67. https://doi.org/10.1234/5678
+          </li>
+          <li>Smiths, J. (2019). <cite>How to write a scientific paper</cite>. Oxford University Press.
+          </li>
+        </ul>
+        <br>
+        <a href="#top"> &#8896; volver</a>
+      </section>
+    </article>
+  
+  </main>
+  
+  <footer>
+    <p> &copy 2023 |Alejandro Villanueva  - WDesigner.co. | Todos los derechos reservados.</p>
+  </footer>
+  <!-- Código para simbolos en https://symbl.cc/es/html-entities/-->
+  
+</body>
+</html>
