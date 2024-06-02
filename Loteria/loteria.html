@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronóstico de Lotería</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <style>
+      .imglo {
+        background-color: white;
+        width: 290px;
+        height: auto;
+      }
+    </style>
+</head>
+<body>
+    <label for="lotterySelector">Selecciona una lotería:</label>
+    <select id="lotterySelector" onchange="cambiarImagen()">
+        <option value="Boyaca">Boyaca</option>
+        <option value="CruzRoja">Cruz Roja</option>
+        <option value="sinuanod">Sinuano Dia</option>
+        <option value="sinuanon">Sinuano Noche</option>
+        <option value="valle">Valle</option>
+    </select>
+
+    <button onclick="cargarArchivo()">Cargar Archivo</button>
+    <input type="file" id="fileInput" style="display: none;" />
+
+    <p id="mensajeArchivo"></p>
+    
+    <div id="imagenContainer">
+    <img class="imglo" id="loteriaImagen" src="boyaca.png" alt="lotería">
+    </div>
+
+    <div>
+        <p>Último número sorteado: <span id="ultimoNumero"></span></p>
+        <p>Fecha del último número sorteado: <span id="fechaUltimoNum"></span></p>
+        <button onclick="obtenerUltimoNumero()">Obtener Último Número Sorteado</button>
+    </div>
+
+    <div>
+        <button onclick="permutar()">Permutar Último Número Sorteado</button>
+        <p id="permutadosSorteados">Sorteados:</p>
+        <p id="permutadosNoSorteados">No Sorteados:</p>
+    </div>
+
+    <div>
+        <input type="text" id="numeroInput" placeholder="Ingresa un número de 4 dígitos">
+        <button onclick="buscarNumero()">Buscar Número</button>
+        <p id="resultadoBusqueda"></p>
+        <button onclick="permutar2()">Permutar Número Ingresado</button>
+        <p id="permutadosSorteadosInput">Sorteados:</p>
+        <p id="permutadosNoSorteadosInput">No Sorteados:</p>
+    </div>
+
+    <div>
+        <button onclick="imprimirNumerosRepetidos()">Números Sorteados Más de Una Vez</button>
+        <div id="numerosRepetidos"></div>
+        <button onclick="calcularPromedioRepeticion()">Calcular Promedio Repetición</button>
+<p id="promedioRepeticion"></p>
+    </div>
+    
+    <div>
+  <p>Número ganador: <span id="numeroEstimado"></span></p>
+  <button onclick="buscarNumeroAleatorio()">Buscar Número Aleatorio No Sorteado</button>
+  
+</div>
+<p id="permutadosSorteadosAleatorio">Sorteados</p>
+<p id="permutadosNoSorteadosAleatorio">No Sorteados</p>
+
+
+    <script src="script.js"></script>
+    <script>
+        function cambiarImagen() {
+            const selector = document.getElementById("lotterySelector");
+            const loteria = selector.value;
+            const imagen = document.getElementById("loteriaImagen");
+            imagen.src = `${loteria}.png`;
+        }
+    </script>
+</body>
+</html>
